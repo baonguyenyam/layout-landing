@@ -40,7 +40,6 @@ app.controller("mainControl", function($scope, $http, $rootScope) {
 		function(response) {
 			baoNguyenApp.loading(!1)
 			$scope.data = eval(response.data);
-			console.log($scope.data)
 		},
 		function(error) {
 			console.log("Lỗi Data: " + error);
@@ -48,7 +47,18 @@ app.controller("mainControl", function($scope, $http, $rootScope) {
 	);
 
 	$scope.getClick = function(e) {
-		console.log(e)
+		$http({
+			method: "GET",
+			url: './uploads/' + e
+		}).then(
+			function(response) {
+				console.log(response)
+			},
+			function(error) {
+				console.log("Lỗi Files: " + error);
+			}
+		);
+	
 	}
 	
 });
