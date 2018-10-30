@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Header",
+		"dir": "header",
+		"icon": "fa-home"
+	},
+	{
+		"name": "Footer",
+		"dir": "footer",
+		"icon": "fa-home"
+	},
+	{
+		"name": "Header",
+		"dir": "header",
+		"icon": "fa-home"
+	}
+]

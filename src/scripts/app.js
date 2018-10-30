@@ -39,12 +39,16 @@ app.controller("mainControl", function($scope, $http, $rootScope) {
 	}).then(
 		function(response) {
 			baoNguyenApp.loading(!1)
-			$scope.settings = eval(response.data.settings);
+			$scope.data = eval(response.data);
+			console.log($scope.data)
 		},
 		function(error) {
 			console.log("Lỗi Data: " + error);
 		}
 	);
 
+	$scope.getClick = function(e) {
+		console.log(e)
+	}
 	
 });

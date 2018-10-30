@@ -1,8 +1,8 @@
 module.exports = function (gulp, $, browserSync) {
 	gulp.task('copy-db', function () {
 		return gulp.src([
-				'./src/db/**.*',
+				'./src/data/**.*',
 			])
-			.pipe(gulp.dest('./dist/db'));
+			.pipe(gulp.dest('./dist/data'));
 	});
 };

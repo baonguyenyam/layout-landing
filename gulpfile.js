@@ -17,6 +17,7 @@ gulp.task('default', function (callback) {
 		'clean',
 		'copy-db',
 		'copy-img',
+		'copy-uploads',
 		'copy-fonts',
 		'copy-favicon',
 		'concat-css',
@@ -33,6 +34,7 @@ gulp.task('build', function (callback) {
 	runSequence(
 		'clean',
 		'copy-img',
+		'copy-uploads',
 		'copy-db',
 		'copy-fonts',
 		'copy-favicon',
