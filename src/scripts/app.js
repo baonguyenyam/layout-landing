@@ -1,4 +1,4 @@
-var app = angular.module("canhCamApp", ["ui.bootstrap"]);
+var app = angular.module("landingPageApp", ["ngResource", "ui.bootstrap"]);
 // Config
 app.config([
 	"$compileProvider",
@@ -8,6 +8,10 @@ app.config([
 		);
 	}
 ]);
+app.config(['$resourceProvider', function($resourceProvider) {
+	// Don't strip trailing slashes from calculated URLs
+	$resourceProvider.defaults.stripTrailingSlashes = false;
+  }]);
 // Filter
 app.filter("html", [
 	"$sce",
@@ -18,7 +22,7 @@ app.filter("html", [
 	}
 ]);
 // Main Controller
-app.controller("mainControl", function($scope, $http, $rootScope) {
+app.controller("mainControl", function($scope, $http, $rootScope, $resource) {
 	$scope.lang = {
 		loading: "Đang tải dữ liệu...",
 		pattern: "Mẫu",
