@@ -1,0 +1,55 @@
+{
+	"menu": [
+		{
+			"id": 1,
+			"name": "Trang chủ",
+			"url": "home",
+			"icon": "fa-home"
+		}, {
+			"id": 2,
+			"name": "Alert",
+			"url": "alert",
+			"icon": "fa-shopping-cart"
+		}, {
+			"id": 3,
+			"name": "Boxes",
+			"url": "boxes",
+			"icon": "fa-coffee"
+		}, {
+			"id": 4,
+			"name": "Contact",
+			"url": "contact",
+			"icon": "fa-archive"
+		}, {
+			"id": 5,
+			"name": "Footer",
+			"url": "footer",
+			"icon": "fa-at"
+		}, {
+			"id": 6,
+			"name": "Layout",
+			"url": "layout",
+			"icon": "fa-at"
+		}, {
+			"id": 7,
+			"name": "Form Login",
+			"url": "formlogin",
+			"icon": "fa-at"
+		}, {
+			"id": 8,
+			"name": "List",
+			"url": "list",
+			"icon": "fa-at"
+		}, {
+			"id": 9,
+			"name": "Navigation",
+			"url": "navigation",
+			"icon": "fa-at"
+		}, {
+			"id": 10,
+			"name": "Slider",
+			"url": "slider",
+			"icon": "fa-at"
+		}
+	]
+}

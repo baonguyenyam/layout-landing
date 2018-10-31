@@ -1,0 +1,15 @@
+angular.module('app.controllers', [
+	'main.controller',
+	'menu.controller',
+	'home.controller',
+	'about.controller',
+	'alert.controller',
+	'boxes.controller',
+	'contact.controller',
+	'list.controller',
+	'formlogin.controller',
+	'layout.controller',
+	'footer.controller',
+	'navigation.controller',
+	'slider.controller',
+])
