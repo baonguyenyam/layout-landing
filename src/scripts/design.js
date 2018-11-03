@@ -1,7 +1,7 @@
 var baoNguyenApp = {
 	// API hệ thống 
 	API: {
-		URL: "./data/menu.json",
+		URL: "./db/menu.json",
 	},
 	// Bật loadding 
 	loading: (i) => {

@@ -9,20 +9,9 @@ header.bg-light.justify-content-between
 				span.fa.fa-bars
 			#fullStackMenu.collapse.navbar-collapse
 				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
 				.mr-auto
-				ul.navbar-nav
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
-					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
-					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
-					li.nav-item
-						a.nav-link(href="contact.html") Liên hệ
+				ul.navbar-nav(ng-controller="MenuController")
+					li.nav-item(ng-repeat="item in menuData" ui-sref-active="active")
+						a.nav-link(ui-sref="{{item.url}}") {{item.name}}
 <!-- ////////////// HEADER ////////////// -->

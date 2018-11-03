@@ -1,0 +1,64 @@
+[
+		{
+			"id": 1,
+			"name": "Home",
+			"url": "home",
+			"icon": "fa-home",
+			"dir": "home"
+		}, {
+			"id": 2,
+			"name": "Alert",
+			"url": "alert",
+			"icon": "fa-shopping-cart",
+			"dir": "alert"
+		}, {
+			"id": 3,
+			"name": "Boxes",
+			"url": "boxes",
+			"icon": "fa-coffee",
+			"dir": "boxes"
+		}, {
+			"id": 4,
+			"name": "Contact",
+			"url": "contact",
+			"icon": "fa-archive",
+			"dir": "contact"
+		}, {
+			"id": 5,
+			"name": "Footer",
+			"url": "footer",
+			"icon": "fa-at",
+			"dir": "footer"
+		}, {
+			"id": 6,
+			"name": "Layout",
+			"url": "layout",
+			"icon": "fa-at",
+			"dir": "layout"
+		}, {
+			"id": 7,
+			"name": "Login Form",
+			"url": "formlogin",
+			"icon": "fa-at",
+			"dir": "formlogin"
+		}, {
+			"id": 8,
+			"name": "List",
+			"url": "list",
+			"icon": "fa-at",
+			"dir": "list"
+		}, {
+			"id": 9,
+			"name": "Navigation",
+			"url": "navigation",
+			"icon": "fa-at",
+			"dir": "navigation"
+		}, {
+			"id": 10,
+			"name": "Slider",
+			"url": "slider",
+			"icon": "fa-at",
+			"dir": "slider"
+		}
+	]
+

@@ -1,9 +1,9 @@
 {
 	"config": {
 		"SEO": {
-			"AppName": "Lien A",
+			"AppName": "Web Components",
 			"mobile_color": "#000000",
-			"cfg_name": "Lien A - Design Tool",
+			"cfg_name": "Web Component",
 			"cfg_url": "www.liena.com.vn",
 			"analytics": "UA-XXXXXXXXXXX-1",
 			"seo_lang": "en",
