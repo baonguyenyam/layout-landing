@@ -111,8 +111,17 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 			$("#lightgallery").lightGallery();
 			});
 		style.
-			.caption{
-				display: none
+			.am-thuc img{
+				box-shadow: 0 3px 3px 0 rgba(0,0,0,.33);
+				border-radius: 3px;
+				/* border: 3px solid transparent; */
+				transition: .3s all ease-in-out;
+			}
+			.am-thuc img:hover{
+				box-shadow: 0 0 0 3px #21438E;
+			}
+			.fancybox-slide--image{
+				background: #00000000!important;
 			}
 		block js
 
