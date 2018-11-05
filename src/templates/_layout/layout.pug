@@ -34,14 +34,8 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 		include header
 		<!-- ////////////// End Header ////////////// -->
 		<!-- ////////////// Begin Main ////////////// -->
-		block body
 		main
-			.container-fluid.pt-3
-				.row 
-					.col-md-3
-						div(ui-view="menu")
-					.col-md-9
-						div(ui-view)
+			block body
 		<!-- ////////////// End Main ////////////// -->
 		<!-- ////////////// Footer ////////////// -->
 		//- include footer

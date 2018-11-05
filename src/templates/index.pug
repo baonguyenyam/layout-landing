@@ -12,13 +12,20 @@ block body
 		.bar Đang tải dữ liệu...
 		.progress
 			.progress-bar.progress-bar-striped.bg-secondary.progress-bar-animated(role="progressbar" aria-valuenow="100" style="width: 100%" aria-valuemin="0" ariavaluemax="100")
-	//- section.canhcam-design-1
-	//- 	.container-fluid
-	//- 		.row.no-gutters
-	//- 			.col-md Danh mục
-	//- 			.col-md.menuright
-	//- 				ul
-	//- 					li.item(ng-repeat="item in data")
-	//- 						a(ng-href="javascript:void(0);" ng-click="getClick(item.dir)") 
-	//- 							em.fa(ng-class="item.icon")
-	//- 							span {{item.name}}
+	section.gallery-page
+		.container
+			.row
+				.col(style="display:flex;justify-content: center")
+					img.img-fluid(src="img/logo-min.png" alt="")
+			.row
+				.col.text-center
+					h2
+						| THƯ VIỆN ẢNH
+			.row#danhmucanh
+				.col-md-12
+					.portfolioFilter.clearfix.text-center
+						div.menu-styles(ui-view="menu")
+			.row
+				.col-md-12
+					.portfolioContainer
+						div(ui-view)

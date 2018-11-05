@@ -1,5 +1,6 @@
-ul.nav.nav-pills.flex-column.mb-4
-	li.nav-item(ng-repeat="item in menuData") 
-		a.nav-link(ui-sref="{{item.url}}" ui-sref-active="active") 
-			i.fa.fa-fw.mr-2(ng-class="(item.icon.length) ? item.icon : ''")
-			| {{item.name}}
+//- ul.nav.nav-pills.flex-column.mb-4
+//- 	li.nav-item(ng-repeat="item in menuData") 
+//- 		a.nav-link(ui-sref="{{item.url}}" ui-sref-active="active") 
+//- 			i.fa.fa-fw.mr-2(ng-class="(item.icon.length) ? item.icon : ''")
+//- 			| {{item.name}}
+a(ng-repeat="item in menuData" ui-sref="{{item.url}}" data-filter=".{{item.dir}}" ui-sref-active="current") {{item.name}}

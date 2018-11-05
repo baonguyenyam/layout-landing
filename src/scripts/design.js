@@ -42,7 +42,8 @@ const s3AWS = {
 	delimiter: '/',
 	baseURL: 'http://ldbwebcomponents.s3.amazonaws.com/',
 	prefixes: {
-		alert: 'alert/'
+		alert: 'alert/',
+		boxes: 'boxes/',
 	}
 }
 
