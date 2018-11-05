@@ -10,7 +10,7 @@ function _contactRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'ContactController',
-					templateUrl: '/views/menu/contact.html',
+					templateUrl: '/views/pages/contact.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

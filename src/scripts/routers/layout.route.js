@@ -10,7 +10,7 @@ function _layoutRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'LayoutController',
-					templateUrl: '/views/menu/layout.html',
+					templateUrl: '/views/pages/layout.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

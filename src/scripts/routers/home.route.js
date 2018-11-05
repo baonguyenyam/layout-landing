@@ -10,7 +10,7 @@ function _homeRoute($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvid
 			views: {
 				"@": {
 					controller: 'HomeController',
-					templateUrl: '/views/menu/home.html',
+					templateUrl: '/views/pages/home.html',
 				},
 				"menu@": {
 					controller: 'MenuController',
