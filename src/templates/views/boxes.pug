@@ -1,3 +1,91 @@
-.row
-	.col
-		p {{data}}
+script.
+	$(document).ready(function() {
+		var $container = $('.portfolioContainer');
+		$container.isotope({
+		filter: '*',
+		animationOptions: {
+		duration: 750,
+		easing: 'linear',
+		queue: false
+		}
+		});
+		$('.portfolioFilter a').click(function(){
+		$('.portfolioFilter .current').removeClass('current');
+		$(this).addClass('current');
+		var selector = $(this).attr('data-filter');
+		$container.isotope({
+		filter: selector,
+		animationOptions: {
+		duration: 750,
+		easing: 'linear',
+		queue: false
+		}
+		});
+		return false;
+		});
+		});
+.container.p-0
+	.row
+		.col-md-12
+			.portfolioContainer#lightgallery
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+				.am-thuc(style="width:150px;margin:.3rem")
+					a(href="./img/gallery/1.jpg" data-fancybox="images")
+						img.img-fluid(src="./img/gallery/thumb/1.jpg")
+//- script.
+//- 	$(document).ready(function() {
+//- 	$("#lightgallery").lightGallery();
+//- 	});
