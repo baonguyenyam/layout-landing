@@ -13,6 +13,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/angular-resource/angular-resource.min.js',
 				'node_modules/ui-bootstrap4/dist/ui-bootstrap-3.0.5.min.js',
 				'node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls-3.0.5.min.js',
+				'bower_components/aws-sdk/dist/aws-sdk.min.js',
 				// 'bower_components/angular-screenshot/build/angular-screenshot.min.js',
 				// 'src/vendor/FileSaver.js',
 				// 'src/vendor/grabzit.min.js',

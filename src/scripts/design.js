@@ -1,4 +1,4 @@
-var baoNguyenApp = {
+const baoNguyenApp = {
 	// API hệ thống 
 	API: {
 		URL: "./db/menu.json",
@@ -34,5 +34,19 @@ $(document).ready(() => {
 	baoNguyenApp.init()
 });
 
-$(window).resize(() => {
+$(window).resize(() => {});
+
+const s3AWS = {
+	bucketRootName: 'ldbwebcomponents',
+	maxKeys: 1000,
+	delimiter: '/',
+	baseURL: 'http://ldbwebcomponents.s3.amazonaws.com/',
+	prefixes: {
+		alert: 'alert/'
+	}
+}
+
+AWS.config.region = 'ap-southeast-1'; // Region
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+	IdentityPoolId: 'ap-southeast-1:344a47a4-be9d-4489-9899-ecbbc4e0ac22',
 });
