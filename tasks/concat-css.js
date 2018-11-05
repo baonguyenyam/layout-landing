@@ -7,6 +7,8 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/angular-toastr/dist/angular-toastr.min.css',
 				// // OWL
 				'src/css/offline-language-vietnam.min.css',
+				'bower_components/lightgallery/dist/css/lightgallery.css',
+				'bower_components/lightgallery/dist/css/lightgallery.min.css',
 			])
 			.pipe($.concat('addons.css'))
 			.pipe(gulp.dest('./dist/css'));

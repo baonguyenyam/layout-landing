@@ -27,6 +27,7 @@
     "angular-sanitize": "^1.7.3",
     "offline": "^0.7.19",
     "angular-ui-router": "^1.0.20",
-    "angular-toastr": "^2.1.1"
+    "angular-toastr": "^2.1.1",
+    "isotope-layout": "^3.0.6"
   }
 }

@@ -1,6 +1,7 @@
 module.exports = function(gulp, $, browserSync) {
     gulp.task('concat-js', function() {
         return gulp.src([
+                'bower_components/jquery/dist/jquery.min.js',
                 'bower_components/offline/offline.min.js',
                 'bower_components/angular/angular.min.js',
                 'bower_components/angular-ui-router/release/angular-ui-router.min.js',
@@ -10,6 +11,10 @@ module.exports = function(gulp, $, browserSync) {
                 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
                 'bower_components/angular-toastr/dist/angular-toastr.min.js',
                 'bower_components/angular-toastr/dist/angular-toastr.tpls.min.js',
+                'bower_components/isotope-layout/dist/isotope.pkgd.min.js',
+                'bower_components/isotope-layout/dist/isotope.pkgd.js',
+                'bower_components/lightgallery/dist/js/lightgallery.js',
+                'bower_components/lightgallery/dist/js/lightgallery.min.js',
             ])
             .pipe($.concat('addons.js'))
             .pipe(gulp.dest('./dist/js'));
