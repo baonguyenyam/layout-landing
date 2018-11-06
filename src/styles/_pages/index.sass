@@ -2,48 +2,65 @@
 // Phần Slider
 /////////////////////////////////
 
-
-.fancybox-content
-	max-width: 100%
-.fancybox-slide--image
-	background: black !important
-.imglist a img
-	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.33)
-	border-radius: 3px
-	transition: 0.3s all ease-in-out
-	&:hover
-		box-shadow: 0 0 0 3px #21438E
-
-.fancybox-button.fancybox-button--info
-	color: #F9C14B
-	width: 93px
-	font-weight: 700
-	&:hover
+.gallery-page
+	padding-top: 5rem
+	.fancybox-content
+		max-width: 100%
+	.fancybox-slide--image
+		background: black !important
+	.imglist a img
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.33)
+		border-radius: 3px
+		transition: 0.3s all ease-in-out
+		&:hover
+			box-shadow: 0 0 0 3px #21438E
+	.fancybox-button.fancybox-button--info
 		color: #F9C14B
 		width: 93px
 		font-weight: 700
-
-.fancybox-navigation .fancybox-button:hover
-	color: white
-	cursor: pointer
-.menu-styles a
-	padding: 1rem
-	background: #f9c14b
-	color: white
-	margin-left: .5rem
-	margin-right: .5rem
-	&:first-child
-		margin-left: 0
-	&:last-child
-		margin-right: 0
-	border-radius: 2px
-	text-decoration: none
-	+transition(.3s ease-in-out)
-	&:hover, &.current
-		background-color: #21418C
-		color: #fff
-.menu-styles
-	margin: 2rem 0
-	display: none
-	+media-breakpoint-up(lg)
-		display: block
+		&:hover
+			color: #F9C14B
+			width: 93px
+			font-weight: 700
+	.fancybox-navigation .fancybox-button:hover
+		color: white
+		cursor: pointer
+	.menu-styles a
+		padding: .5rem
+		background: #f9c14b
+		color: white
+		text-align: left
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
+		border-radius: 2px
+		text-decoration: none
+		+transition(.3s ease-in-out)
+		&:hover, &.current
+			background-color: #21418C
+			color: #fff
+	.menu-styles
+		display: none
+		+media-breakpoint-up(sm)
+			display: block
+	.title
+		font-size: 2rem
+		text-transform: uppercase
+		margin: 1rem 0
+		font-weight: 500
+		padding: 1rem
+		transition: .3s all ease-in-out
+		position: relative
+		font-weight: bold
+		color: #21438e
+		&:before
+			content: ''
+			display: block
+			width: 60px
+			height: 5px
+			position: absolute
+			bottom: -5px
+			left: 50%
+			transform: translateX(-50%)
+			background: #f9c14b

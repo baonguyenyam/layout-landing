@@ -31,6 +31,7 @@
     "angular-resource": "^1.7.5",
     "isotope-layout": "^3.0.6",
     "aws-sdk": "^2.349.0",
-    "angular-ui-router": "^1.0.20"
+    "angular-ui-router": "^1.0.20",
+    "fancybox": "^3.5.2"
   }
 }
