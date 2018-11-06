@@ -10,7 +10,7 @@ function _listRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'ListController',
-					templateUrl: '/views/pages/list.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

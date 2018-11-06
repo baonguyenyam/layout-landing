@@ -12,26 +12,12 @@ function _alertController($scope, $rootScope) {
 	};
 	$rootScope.baseURL = s3AWS.baseURL;
 
-	const loadImages = () => {
-		return new Promise((resolve, reject) => {
-			s3.listObjectsV2(params, (err, data) => {
-				if (err) {
-					// an error occurred
-					reject(err);
-				} else {
-					// successful response
-					resolve(data);
-				}
-			});
-		});
-	};
-
-	loadImages()
+	s3AWS.loadImages(s3, params)
 		.then(data => {
-			console.log(data.Contents);
 			data.Contents.shift();
 			$scope.images = data.Contents;
 			$scope.$apply();
+			baoNguyenApp.loadIsotope()
 		})
 		.catch(err => console.log(err));
 }

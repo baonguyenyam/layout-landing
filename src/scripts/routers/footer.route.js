@@ -10,7 +10,7 @@ function _footerRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'FooterController',
-					templateUrl: '/views/pages/footer.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

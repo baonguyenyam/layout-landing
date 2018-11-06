@@ -10,7 +10,7 @@ function _alertRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'AlertController',
-					templateUrl: '/views/pages/alert.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

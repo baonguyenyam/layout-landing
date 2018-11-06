@@ -10,7 +10,8 @@ function _boxesRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'BoxesController',
-					templateUrl: '/views/pages/boxes.html',
+					templateUrl: '/views/content.html',
+					
 				},
 				"menu@": {
 					controller: 'MenuController',

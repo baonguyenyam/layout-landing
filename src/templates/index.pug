@@ -15,17 +15,16 @@ block body
 	section.gallery-page
 		.container
 			.row
-				.col(style="display:flex;justify-content: center")
-					img.img-fluid(src="img/logo-min.png" alt="")
+				.col
+					.text-center
+						img.img-fluid(src="img/logo-min.png" alt="")
 			.row
-				.col.text-center
-					h2
-						| THƯ VIỆN ẢNH
-			.row#danhmucanh
+				.col
+					h2.text-center THƯ VIỆN ẢNH
+			.row
 				.col-md-12
 					.portfolioFilter.clearfix.text-center
 						div.menu-styles(ui-view="menu")
 			.row
 				.col-md-12
-					.portfolioContainer
-						div(ui-view)
+					div.asdasd(ui-view)

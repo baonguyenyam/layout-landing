@@ -10,7 +10,7 @@ function _navigationRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'NavigationController',
-					templateUrl: '/views/pages/navigation.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

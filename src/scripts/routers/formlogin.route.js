@@ -10,7 +10,7 @@ function _formloginRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'FormloginController',
-					templateUrl: '/views/pages/formlogin.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

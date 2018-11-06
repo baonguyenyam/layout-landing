@@ -26,10 +26,18 @@ const baoNguyenApp = {
 	// Khởi tạo app
 	init: () => {
 		// Chạy các hàm jquery mặc định
+	},
+	loadIsotope: () => {
+		$('.portfolioContainer').isotope({
+			filter: '*',
+			animationOptions: {
+				duration: 750,
+				easing: 'linear',
+				queue: false
+			}
+		})
 	}
 }
-
-// Canh Cam Code
 $(document).ready(() => {
 	baoNguyenApp.init()
 });
@@ -44,6 +52,19 @@ const s3AWS = {
 	prefixes: {
 		alert: 'alert/',
 		boxes: 'boxes/',
+	},
+	loadImages: (s3, params) => {
+		return new Promise((resolve, reject) => {
+			s3.listObjectsV2(params, (err, data) => {
+				if (err) {
+					// an error occurred
+					reject(err);
+				} else {
+					// successful response
+					resolve(data);
+				}
+			});
+		});
 	}
 }
 

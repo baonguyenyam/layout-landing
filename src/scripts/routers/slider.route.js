@@ -10,7 +10,7 @@ function _sliderRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'SliderController',
-					templateUrl: '/views/pages/slider.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

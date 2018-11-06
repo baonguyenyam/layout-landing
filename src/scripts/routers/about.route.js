@@ -10,7 +10,7 @@ function _aboutRoute($stateProvider, $urlRouterProvider) {
 			views: {
 				"@": {
 					controller: 'AboutController',
-					templateUrl: '/views/pages/about.html',
+					templateUrl: '/views/content.html',
 				},
 				"menu@": {
 					controller: 'MenuController',

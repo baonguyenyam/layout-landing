@@ -1,0 +1,5 @@
+.portfolioContainer
+	.am-thuc(style="width:150px;margin:.3rem" ng-repeat="image in images")
+		.imglist
+			a(ng-href="{{baseURL + image.Key}}" data-fancybox="images")
+				img(ng-src="{{baseURL + image.Key}}" imageonload="timingImage()").img-fluid

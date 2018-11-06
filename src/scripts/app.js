@@ -1,7 +1,7 @@
-var app = angular.module("landingPageApp", [ 
+var app = angular.module("landingPageApp", [
 	'ui.router',
 	"ui.bootstrap",
-	"ngResource", 
+	"ngResource",
 	//App |  Hệ thống
 	// 'app.config',
 	'app.routers',
@@ -15,17 +15,28 @@ var app = angular.module("landingPageApp", [
 //Config
 app.config([
 	"$compileProvider",
-	function($compileProvider) {
+	function ($compileProvider) {
 		$compileProvider.aHrefSanitizationWhitelist(
 			/^\s*(https?|ftp|mailto|file|javascript):/
 		);
 	}
 ]);
-app.config(['$resourceProvider', function($resourceProvider) {
+app.config(['$resourceProvider', function ($resourceProvider) {
 	// Don't strip trailing slashes from calculated URLs
 	$resourceProvider.defaults.stripTrailingSlashes = false;
-  }]);
+}]);
 
+app.directive('imageonload', function () {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attrs) {
+			element.bind('load', function () {
+				//call the function that was passed
+				scope.$apply(attrs.imageonload);
+			});
+		}
+	};
+})
 
 
 // Filter
@@ -80,7 +91,7 @@ app.config(['$resourceProvider', function($resourceProvider) {
 // 				console.log("Lỗi Files: " + error);
 // 			}
 // 		);
-	
+
 // 	}
-	
+
 // });
