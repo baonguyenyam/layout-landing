@@ -1,15 +1,15 @@
-angular.module('navigation.router', []).config(_navigationRoute)
+angular.module('prices.router', []).config(_pricesRoute)
 
-function _navigationRoute($stateProvider, $urlRouterProvider) {
+function _pricesRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('navigation', {
-			url: '/navigation',
+		.state('prices', {
+			url: '/prices',
 			data : { 
 				pageTitle: 'Về chúng tôi' 
 			},
 			views: {
 				"@": {
-					controller: 'NavigationController',
+					controller: 'PricesController',
 					templateUrl: '/views/content.html',
 				},
 				"menu@": {

@@ -1,15 +1,15 @@
-angular.module('contact.router', []).config(_contactRoute)
+angular.module('mail.router', []).config(_mailRoute)
 
-function _contactRoute($stateProvider, $urlRouterProvider) {
+function _mailRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('contact', {
-			url: '/contact',
+		.state('mail', {
+			url: '/mail',
 			data : { 
 				pageTitle: 'Về chúng tôi' 
 			},
 			views: {
 				"@": {
-					controller: 'ContactController',
+					controller: 'MailController',
 					templateUrl: '/views/content.html',
 				},
 				"menu@": {

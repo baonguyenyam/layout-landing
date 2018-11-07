@@ -1,64 +1,133 @@
-[
-		{
-			"id": 1,
-			"name": "Home",
-			"url": "home",
-			"icon": "fa-home",
-			"dir": "home"
-		}, {
-			"id": 2,
-			"name": "Alert",
-			"url": "alert",
-			"icon": "fa-shopping-cart",
-			"dir": "alert"
-		}, {
-			"id": 3,
-			"name": "Boxes",
-			"url": "boxes",
-			"icon": "fa-coffee",
-			"dir": "boxes"
-		}, {
-			"id": 4,
-			"name": "Contact",
-			"url": "contact",
-			"icon": "fa-archive",
-			"dir": "contact"
-		}, {
-			"id": 5,
-			"name": "Footer",
-			"url": "footer",
-			"icon": "fa-at",
-			"dir": "footer"
-		}, {
-			"id": 6,
-			"name": "Layout",
-			"url": "layout",
-			"icon": "fa-at",
-			"dir": "layout"
-		}, {
-			"id": 7,
-			"name": "Login Form",
-			"url": "formlogin",
-			"icon": "fa-at",
-			"dir": "formlogin"
-		}, {
-			"id": 8,
-			"name": "List",
-			"url": "list",
-			"icon": "fa-at",
-			"dir": "list"
-		}, {
-			"id": 9,
-			"name": "Navigation",
-			"url": "navigation",
-			"icon": "fa-at",
-			"dir": "navigation"
-		}, {
-			"id": 10,
-			"name": "Slider",
-			"url": "slider",
-			"icon": "fa-at",
-			"dir": "slider"
-		}
-	]
-
+[{
+		"id": 1,
+		"name": "About",
+		"url": "about",
+		"icon": "fa-home",
+		"dir": "about"
+	}, {
+		"id": 2,
+		"name": "Banner",
+		"url": "banner",
+		"icon": "fa-shopping-cart",
+		"dir": "banner"
+	}, {
+		"id": 3,
+		"name": "Boxes",
+		"url": "boxes",
+		"icon": "fa-coffee",
+		"dir": "boxes"
+	}, {
+		"id": 4,
+		"name": "Client",
+		"url": "client",
+		"icon": "fa-archive",
+		"dir": "client"
+	}, {
+		"id": 5,
+		"name": "Feature",
+		"url": "feature",
+		"icon": "fa-at",
+		"dir": "feature"
+	}, {
+		"id": 6,
+		"name": "Footer",
+		"url": "footer",
+		"icon": "fa-at",
+		"dir": "footer"
+	}, {
+		"id": 7,
+		"name": "Form",
+		"url": "form",
+		"icon": "fa-at",
+		"dir": "form"
+	}, {
+		"id": 8,
+		"name": "Gallery",
+		"url": "gallery",
+		"icon": "fa-at",
+		"dir": "gallery"
+	}, {
+		"id": 9,
+		"name": "Header",
+		"url": "header",
+		"icon": "fa-at",
+		"dir": "header"
+	},
+	{
+		"id": 10,
+		"name": "Introduces",
+		"url": "introduces",
+		"icon": "fa-at",
+		"dir": "introduces"
+	},
+	{
+		"id": 11,
+		"name": "list",
+		"url": "list",
+		"icon": "fa-at",
+		"dir": "list"
+	},
+	{
+		"id": 12,
+		"name": "mail",
+		"url": "mail",
+		"icon": "fa-at",
+		"dir": "mail"
+	},
+	{
+		"id": 13,
+		"name": "maps",
+		"url": "maps",
+		"icon": "fa-at",
+		"dir": "maps"
+	},
+	{
+		"id": 14,
+		"name": "news",
+		"url": "news",
+		"icon": "fa-at",
+		"dir": "news"
+	},
+	{
+		"id": 15,
+		"name": "prices",
+		"url": "prices",
+		"icon": "fa-at",
+		"dir": "prices"
+	},
+	{
+		"id": 16,
+		"name": "product",
+		"url": "product",
+		"icon": "fa-at",
+		"dir": "product"
+	},
+	{
+		"id": 17,
+		"name": "services",
+		"url": "services",
+		"icon": "fa-at",
+		"dir": "services"
+	},
+	{
+		"id": 18,
+		"name": "slider",
+		"url": "slider",
+		"icon": "fa-at",
+		"dir": "slider"
+	},
+	{
+		"id": 19,
+		"name": "statistic",
+		"url": "statistic",
+		"icon": "fa-at",
+		"dir": "statistic"
+	},
+	{
+		"id": 20,
+		"name": "testimotional",
+		"url": "testimotional",
+		"icon": "fa-at",
+		"dir": "testimotional"
+	}
+]

@@ -10,29 +10,12 @@ function _boxesController($scope, $rootScope) {
 	};
 	$rootScope.baseURL = s3AWS.baseURL;
 
-	$scope.imageCount = 0;
-	$scope.imagesNumber = 0;
-	$scope.timingImage = () => {
-		$scope.imageCount += 1;
-		console.log($scope.imageCount, $scope.imagesNumber)
-		if ($scope.imageCount < $scope.imagesNumber) {
-			$("#loading").removeClass("done").removeClass("finished")
-		} else {
-			setTimeout(() => {
-				$("#loading").addClass("done")
-			}, 1), setTimeout(() => {
-				$("#loading").removeClass("done").addClass("finished")
-			}, 1)
-			baoNguyenApp.loadIsotope();
-			let isotopeContainer = new Isotope('.portfolioContainer');
-			isotopeContainer.shuffle();
-		}
-
-	}
+	$rootScope.imageCount = 0;
+	$rootScope.imagesNumber = 0;
+	
 	s3AWS.loadImages(s3, params)
 		.then(data => {
-			$scope.imagesNumber = data.Contents.length - 1;
-			console.log($scope.imagesNumber)
+			$rootScope.imagesNumber = data.Contents.length - 1;
 			data.Contents.shift();
 			$scope.images = data.Contents;
 			$scope.$apply();

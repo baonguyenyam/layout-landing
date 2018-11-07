@@ -1,12 +1,12 @@
-angular.module('slider.controller', []).controller("SliderController", _sliderController)
+angular.module('services.controller', []).controller("ServicesController", _servicesController)
 
-function _sliderController($scope, $rootScope) {
+function _servicesController($scope, $rootScope) {
 	const s3 = new AWS.S3();
 	const params = {
 		Bucket: s3AWS.bucketRootName,
 		MaxKeys: s3AWS.maxKeys,
 		Delimiter: s3AWS.delimiter,
-		Prefix: s3AWS.prefixes.slider
+		Prefix: s3AWS.prefixes.services
 	};
 	$rootScope.baseURL = s3AWS.baseURL;
 

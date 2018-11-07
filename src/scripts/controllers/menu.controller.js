@@ -5,7 +5,7 @@ function _menuController($scope, $http) {
 		method: 'GET',
 		url: '/db/menu.json'
 	}).then(function (response) {
-		$scope.data = eval(response.data.menu);
+		$scope.menuData = eval(response.data);
 	}, function (error) {
 		console.log('Lỗi 001 - Menu: ' + error);
 	});

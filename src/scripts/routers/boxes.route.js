@@ -4,14 +4,13 @@ function _boxesRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('boxes', {
 			url: '/boxes',
-			data : { 
-				pageTitle: 'Về chúng tôi' 
+			data: {
+				pageTitle: 'Trang chủ'
 			},
 			views: {
 				"@": {
 					controller: 'BoxesController',
 					templateUrl: '/views/content.html',
-					
 				},
 				"menu@": {
 					controller: 'MenuController',

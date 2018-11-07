@@ -1,15 +1,15 @@
-angular.module('formlogin.router', []).config(_formloginRoute)
+angular.module('header.router', []).config(_headerRoute)
 
-function _formloginRoute($stateProvider, $urlRouterProvider) {
+function _headerRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('formlogin', {
-			url: '/formlogin',
+		.state('header', {
+			url: '/header',
 			data : { 
 				pageTitle: 'Về chúng tôi' 
 			},
 			views: {
 				"@": {
-					controller: 'FormloginController',
+					controller: 'HeaderController',
 					templateUrl: '/views/content.html',
 				},
 				"menu@": {

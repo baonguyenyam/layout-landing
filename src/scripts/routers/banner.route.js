@@ -1,15 +1,15 @@
-angular.module('alert.router', []).config(_alertRoute)
+angular.module('banner.router', []).config(_bannerRoute)
 
-function _alertRoute($stateProvider, $urlRouterProvider) {
+function _bannerRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('alert', {
-			url: '/alert',
+		.state('banner', {
+			url: '/banner',
 			data : { 
 				pageTitle: 'Về chúng tôi' 
 			},
 			views: {
 				"@": {
-					controller: 'AlertController',
+					controller: 'BannerController',
 					templateUrl: '/views/content.html',
 				},
 				"menu@": {

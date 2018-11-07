@@ -27,17 +27,20 @@ function _mainController($scope, $http, $rootScope, $resource) {
 		}
 	);
 
-	$scope.getClick = function (e) {
-		$http({
-			method: "GET",
-			url: './uploads/' + e
-		}).then(
-			function (response) {
-				console.log(response)
-			},
-			function (error) {
-				console.log("Lỗi Files: " + error);
-			}
-		);
+
+	$rootScope.timingImage = () => {
+		$rootScope.imageCount += 1;
+		if ($rootScope.imageCount < $rootScope.imagesNumber) {
+			$("#loading").removeClass("done").removeClass("finished")
+		} else {
+			setTimeout(() => {
+				$("#loading").addClass("done")
+			}, 1), setTimeout(() => {
+				$("#loading").removeClass("done").addClass("finished")
+			}, 1)
+			baoNguyenApp.loadIsotope();
+			let isotopeContainer = new Isotope('.portfolioContainer');
+			isotopeContainer.shuffle();
+		}
 	}
 }

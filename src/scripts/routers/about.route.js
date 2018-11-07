@@ -1,11 +1,11 @@
 angular.module('about.router', []).config(_aboutRoute)
 
-function _aboutRoute($stateProvider, $urlRouterProvider) {
+function _aboutRoute($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider) {
 	$stateProvider
 		.state('about', {
-			url: '/about',
-			data : { 
-				pageTitle: 'Về chúng tôi' 
+			url: '/',
+			data: {
+				pageTitle: 'Về chúng tôi'
 			},
 			views: {
 				"@": {
@@ -18,4 +18,7 @@ function _aboutRoute($stateProvider, $urlRouterProvider) {
 				}
 			}
 		});
+
+	$urlRouterProvider.otherwise('/');
+	$urlMatcherFactoryProvider.caseInsensitive(true);
 }

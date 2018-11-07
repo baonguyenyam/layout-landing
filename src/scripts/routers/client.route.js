@@ -1,15 +1,15 @@
-angular.module('layout.router', []).config(_layoutRoute)
+angular.module('client.router', []).config(_clientRoute)
 
-function _layoutRoute($stateProvider, $urlRouterProvider) {
+function _clientRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('layout', {
-			url: '/layout',
+		.state('client', {
+			url: '/client',
 			data : { 
 				pageTitle: 'Về chúng tôi' 
 			},
 			views: {
 				"@": {
-					controller: 'LayoutController',
+					controller: 'ClientController',
 					templateUrl: '/views/content.html',
 				},
 				"menu@": {
